@@ -100,6 +100,60 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLKS_DANGKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_DANGKY.Designer.cs">
+      <DependentUpon>QLKS_DANGKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_DANGNHAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_DANGNHAP.Designer.cs">
+      <DependentUpon>QLKS_DANGNHAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_KH_DATPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_KH_DATPHONG.Designer.cs">
+      <DependentUpon>QLKS_KH_DATPHONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_KH_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_KH_INFO.Designer.cs">
+      <DependentUpon>QLKS_KH_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_KH_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_KH_MENU.Designer.cs">
+      <DependentUpon>QLKS_KH_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_KH_MUADV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_KH_MUADV.Designer.cs">
+      <DependentUpon>QLKS_KH_MUADV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_LETAN_CHECKOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_LETAN_CHECKOUT.Designer.cs">
+      <DependentUpon>QLKS_LETAN_CHECKOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_LETAN_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_LETAN_MENU.Designer.cs">
+      <DependentUpon>QLKS_LETAN_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKS_LETAN_PHIEUDAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKS_LETAN_PHIEUDAT.Designer.cs">
+      <DependentUpon>QLKS_LETAN_PHIEUDAT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +166,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QLKS_DANGKY.resx">
+      <DependentUpon>QLKS_DANGKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_DANGNHAP.resx">
+      <DependentUpon>QLKS_DANGNHAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_KH_DATPHONG.resx">
+      <DependentUpon>QLKS_KH_DATPHONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_KH_INFO.resx">
+      <DependentUpon>QLKS_KH_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_KH_MENU.resx">
+      <DependentUpon>QLKS_KH_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_KH_MUADV.resx">
+      <DependentUpon>QLKS_KH_MUADV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_LETAN_CHECKOUT.resx">
+      <DependentUpon>QLKS_LETAN_CHECKOUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_LETAN_MENU.resx">
+      <DependentUpon>QLKS_LETAN_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKS_LETAN_PHIEUDAT.resx">
+      <DependentUpon>QLKS_LETAN_PHIEUDAT.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,6 +206,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SCRIPT\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
