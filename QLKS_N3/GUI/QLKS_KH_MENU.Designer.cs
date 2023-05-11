@@ -234,6 +234,7 @@ namespace QLKS_N3
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 17;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label14
             // 
@@ -292,6 +293,7 @@ namespace QLKS_N3
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(52, 24);
             this.comboBox2.TabIndex = 20;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -313,6 +315,7 @@ namespace QLKS_N3
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(52, 24);
             this.comboBox3.TabIndex = 21;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -370,6 +373,7 @@ namespace QLKS_N3
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(52, 24);
             this.comboBox4.TabIndex = 26;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox5
             // 
@@ -410,6 +414,7 @@ namespace QLKS_N3
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(52, 24);
             this.comboBox5.TabIndex = 25;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -419,6 +424,7 @@ namespace QLKS_N3
             this.button1.TabIndex = 29;
             this.button1.Text = "Đặt";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -428,6 +434,7 @@ namespace QLKS_N3
             this.button2.TabIndex = 30;
             this.button2.Text = "Mua thêm dịch vụ kèm theo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -437,6 +444,7 @@ namespace QLKS_N3
             this.button3.TabIndex = 31;
             this.button3.Text = "Thông tin cá nhân";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -488,6 +496,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_KH_MENU";
             this.Text = "QLKS_KH_MENU";
+            this.Load += new System.EventHandler(this.QLKS_KH_MENU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

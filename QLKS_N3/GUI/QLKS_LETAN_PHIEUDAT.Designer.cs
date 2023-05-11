@@ -248,6 +248,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_LETAN_PHIEUDAT";
             this.Text = "QLKS_LETAN_PHIEUDAT";
+            this.Load += new System.EventHandler(this.QLKS_LETAN_PHIEUDAT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();

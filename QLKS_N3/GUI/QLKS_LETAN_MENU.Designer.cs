@@ -63,15 +63,11 @@ namespace QLKS_N3
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "ALL",
-            "PHONG DON",
-            "PHONG DOI",
-            "PHONG GIA DINH"});
             this.comboBox1.Location = new System.Drawing.Point(334, 30);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(335, 24);
             this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -85,14 +81,11 @@ namespace QLKS_N3
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "TRONG",
-            "DA DAT",
-            "DANG DAT"});
             this.comboBox2.Location = new System.Drawing.Point(786, 30);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(169, 24);
             this.comboBox2.TabIndex = 4;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -114,6 +107,7 @@ namespace QLKS_N3
             this.button1.TabIndex = 6;
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -123,6 +117,7 @@ namespace QLKS_N3
             this.button2.TabIndex = 7;
             this.button2.Text = "Phiếu đặt";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -132,6 +127,7 @@ namespace QLKS_N3
             this.button3.TabIndex = 8;
             this.button3.Text = "Bán ";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // QLKS_LETAN_MENU
             // 
@@ -150,6 +146,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_LETAN_MENU";
             this.Text = "QLKS_LETAN_MENU";
+            this.Load += new System.EventHandler(this.QLKS_LETAN_MENU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

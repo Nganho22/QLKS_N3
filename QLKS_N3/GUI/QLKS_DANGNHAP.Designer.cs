@@ -62,6 +62,7 @@ namespace QLKS_N3
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(285, 22);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -69,6 +70,7 @@ namespace QLKS_N3
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(285, 22);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -78,6 +80,7 @@ namespace QLKS_N3
             this.button1.TabIndex = 4;
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -87,6 +90,7 @@ namespace QLKS_N3
             this.button2.TabIndex = 5;
             this.button2.Text = "Đăng ký";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // QLKS_DANGNHAP
             // 
@@ -102,6 +106,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_DANGNHAP";
             this.Text = "QLKS_DANGNHAP";
+            this.Load += new System.EventHandler(this.QLKS_DANGNHAP_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

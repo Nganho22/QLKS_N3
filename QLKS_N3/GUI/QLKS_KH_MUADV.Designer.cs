@@ -199,6 +199,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_KH_MUADV";
             this.Text = "QLKS_KH_MUADV";
+            this.Load += new System.EventHandler(this.QLKS_KH_MUADV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();

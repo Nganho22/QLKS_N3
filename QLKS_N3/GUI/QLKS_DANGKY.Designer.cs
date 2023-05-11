@@ -104,6 +104,7 @@ namespace QLKS_N3
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(323, 22);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -111,6 +112,7 @@ namespace QLKS_N3
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 22);
             this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -118,6 +120,7 @@ namespace QLKS_N3
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(323, 22);
             this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -125,6 +128,7 @@ namespace QLKS_N3
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(323, 22);
             this.textBox4.TabIndex = 9;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -132,6 +136,7 @@ namespace QLKS_N3
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(323, 22);
             this.textBox5.TabIndex = 10;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // button1
             // 
@@ -141,6 +146,7 @@ namespace QLKS_N3
             this.button1.TabIndex = 11;
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // QLKS_DANGKY
             // 
@@ -162,6 +168,7 @@ namespace QLKS_N3
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_DANGKY";
             this.Text = "QLKS_DANGKY";
+            this.Load += new System.EventHandler(this.QLKS_DANGKY_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

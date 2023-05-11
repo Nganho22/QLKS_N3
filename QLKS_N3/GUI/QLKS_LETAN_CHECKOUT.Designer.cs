@@ -32,7 +32,6 @@ namespace QLKS_N3
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLKS_LETAN_CHECKOUT));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@ namespace QLKS_N3
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -66,6 +66,7 @@ namespace QLKS_N3
             this.button1.TabIndex = 17;
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -75,15 +76,7 @@ namespace QLKS_N3
             this.button3.TabIndex = 16;
             this.button3.Text = "Bán ";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 42);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Phiếu đặt";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -127,6 +120,7 @@ namespace QLKS_N3
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(403, 22);
             this.textBox1.TabIndex = 23;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
@@ -143,7 +137,7 @@ namespace QLKS_N3
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 217);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 221);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -185,6 +179,7 @@ namespace QLKS_N3
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(223, 22);
             this.textBox2.TabIndex = 29;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button4
             // 
@@ -194,6 +189,7 @@ namespace QLKS_N3
             this.button4.TabIndex = 30;
             this.button4.Text = "Tìm";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -203,6 +199,7 @@ namespace QLKS_N3
             this.button5.TabIndex = 31;
             this.button5.Text = "Tìm";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label7
             // 
@@ -223,6 +220,7 @@ namespace QLKS_N3
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.Size = new System.Drawing.Size(398, 236);
             this.dataGridView4.TabIndex = 33;
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // label8
             // 
@@ -243,6 +241,7 @@ namespace QLKS_N3
             this.dataGridView5.RowTemplate.Height = 24;
             this.dataGridView5.Size = new System.Drawing.Size(490, 148);
             this.dataGridView5.TabIndex = 35;
+            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
             // button6
             // 
@@ -252,12 +251,24 @@ namespace QLKS_N3
             this.button6.TabIndex = 36;
             this.button6.Text = "Thanh toán";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 95);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 42);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "Phieu Dat";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // QLKS_LETAN_CHECKOUT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 651);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView5);
             this.Controls.Add(this.label8);
@@ -276,12 +287,12 @@ namespace QLKS_N3
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QLKS_LETAN_CHECKOUT";
             this.Text = "QLKS_LETAN_CHECKOUT";
+            this.Load += new System.EventHandler(this.QLKS_LETAN_CHECKOUT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -296,7 +307,6 @@ namespace QLKS_N3
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -315,5 +325,6 @@ namespace QLKS_N3
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button2;
     }
 }

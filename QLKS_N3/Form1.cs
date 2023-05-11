@@ -50,5 +50,10 @@ namespace QLKS_N3
             dataGridView1.DataSource = table;
             connection.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
